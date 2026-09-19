@@ -1,17 +1,11 @@
-import html
 import json
-import re
 import sys
 
 import requests
 
-H = {"User-Agent": "estudo-coletor/0.1 (projeto pessoal de estudo)"}
+from common import H, limpar
+
 BASE = "https://hn.algolia.com/api/v1"
-
-
-def limpar(texto: str | None) -> str:
-    # tira tags HTML e converte &amp; etc.
-    return html.unescape(re.sub(r"<[^>]+>", " ", texto or "")).strip()
 
 
 def achatar(no: dict, depth: int = 0) -> list[dict]:

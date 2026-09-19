@@ -12,3 +12,7 @@ __pycache__/
 
 # Dados coletados
 output/
+
+
+# Editor
+.vscode/

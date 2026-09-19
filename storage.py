@@ -4,6 +4,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
+def por_idioma(posts: list[dict]) -> dict:
+    """Agrupa os posts pelo campo "lang": {"pt": {"post_count": 2, "posts": [...]}, ...}"""
+    grupos: dict[str, list[dict]] = {}
+    for post in posts:
+        grupos.setdefault(post["lang"], []).append(post)
+    return {
+        lang: {"post_count": len(itens), "posts": itens}
+        for lang, itens in grupos.items()
+    }
+
+
 def salvar(
     query: str,
     filters: dict,
@@ -11,6 +22,7 @@ def salvar(
 ) -> Path:
     agora = datetime.now(timezone.utc)
 
+    # formato: sources -> <fonte> -> languages -> <idioma> -> posts -> comments
     dados = {
         "query": query,
         "collected_at": agora.isoformat(),
@@ -18,7 +30,7 @@ def salvar(
         "sources": {
             nome: {
                 "post_count": len(posts),
-                "posts": posts,
+                "languages": por_idioma(posts),
             }
             for nome, posts in fontes.items()
         },

@@ -1,0 +1,14 @@
+# Documentação privada (não commitar)
+CLAUDE.md
+docs/DEVLOG.md
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Segredos
+.env
+
+# Dados coletados
+output/

@@ -15,36 +15,26 @@ def por_idioma(posts: list[dict]) -> dict:
     }
 
 
-def salvar(
-    query: str,
-    filters: dict,
-    fontes: dict[str, list[dict]],
-) -> Path:
-    agora = datetime.now(timezone.utc)
-
-    # formato: sources -> <fonte> -> languages -> <idioma> -> posts -> comments
-    dados = {
+def montar(query: str, filters: dict, fontes: dict[str, list[dict]]) -> dict:
+    """Monta o JSON final. Formato: sources -> <fonte> -> languages -> <idioma> -> posts -> comments"""
+    return {
         "query": query,
-        "collected_at": agora.isoformat(),
+        "collected_at": datetime.now(timezone.utc).isoformat(),
         "filters": filters,
         "sources": {
-            nome: {
-                "post_count": len(posts),
-                "languages": por_idioma(posts),
-            }
+            nome: {"post_count": len(posts), "languages": por_idioma(posts)}
             for nome, posts in fontes.items()
         },
     }
 
+
+def salvar(query: str, filters: dict, fontes: dict[str, list[dict]]) -> Path:
+    dados = montar(query, filters, fontes)
+
     slug = re.sub(r"\W+", "_", query.lower()).strip("_")
-
     Path("output").mkdir(exist_ok=True)
-
+    agora = datetime.now(timezone.utc)
     caminho = Path("output") / f"{slug}_{agora:%Y%m%d_%H%M%S}.json"
 
-    caminho.write_text(
-        json.dumps(dados, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
+    caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=2), encoding="utf-8")
     return caminho

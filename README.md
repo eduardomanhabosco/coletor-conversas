@@ -18,8 +18,8 @@ Você digita um tema (ex.: `"como fazer loop"`) e o programa:
 | Hacker News | texto | árvore completa |
 | Lemmy (lemmy.world) | texto | por post, ordenados por score |
 | Stack Exchange | texto, em 6 comunidades (`stackoverflow`, `pt.stackoverflow`, `softwareengineering`, `codereview`, `ux`, `pm`) | respostas mais votadas |
-| Dev.to | por tag | árvore completa |
-| Mastodon (mastodon.social) | por hashtag | respostas ao toot |
+| Dev.to | por tags (a busca inteira e cada palavra) | árvore completa |
+| Mastodon (mastodon.social) | por hashtags (a busca inteira e cada palavra) | respostas ao toot |
 | Discourse (meta.discourse.org) | texto | posts do tópico |
 
 Cada fonte é um arquivo em `fontes/` com uma função `coletar(query, limit, max_comments)`, então adicionar uma nova é criar um arquivo e registrá-lo no `main.py`.

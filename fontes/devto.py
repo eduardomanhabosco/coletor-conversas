@@ -1,6 +1,4 @@
-import re
-
-from common import get, limpar, ts
+from common import get, limpar, palavras, ranquear, tags_da_busca, ts
 
 BASE = "https://dev.to/api"
 
@@ -19,10 +17,23 @@ def achatar(nos: list[dict], depth: int = 0) -> list[dict]:
 
 
 def coletar(query: str, limit: int = 5, max_comments: int = 30) -> list[dict]:
-    # Limite: a API não busca texto livre, só tag; "video editing" vira "videoediting"
-    tag = re.sub(r"\W+", "", query.lower())
+    # Limite: a API pública não tem busca por texto, só por tag. Busca em cada tag da
+    # pesquisa (a busca colada e cada palavra), junta tudo sem repetir e ranqueia pelas
+    # palavras da busca presentes no título, resumo e tags.
+    artigos = {}
+    for tag in tags_da_busca(query):
+        for a in get(f"{BASE}/articles", tag=tag, per_page=100):
+            artigos[a["id"]] = a
+
+    achados = ranquear(
+        list(artigos.values()),
+        lambda a: f"{a['title']} {a['description']} {a.get('tag_list', '')}",
+        palavras(query),
+        lambda a: a["public_reactions_count"],
+    )
+
     posts = []
-    for a in get(f"{BASE}/articles", tag=tag, per_page=min(limit, 1000)):
+    for a in achados[:limit]:
         posts.append({
             "source": "devto",
             "id": str(a["id"]),

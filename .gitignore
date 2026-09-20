@@ -1,6 +1,6 @@
-# Documentação privada (não commitar)
+# Documentação privada (não commitar; inclui docs/APRENDIZADOS.md e docs/DEVLOG.md)
 CLAUDE.md
-docs/DEVLOG.md
+docs/
 
 # Python
 .venv/

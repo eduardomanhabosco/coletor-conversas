@@ -7,7 +7,7 @@ def achatar(nos: list[dict], depth: int = 0) -> list[dict]:
     saida = []
     for n in nos:
         saida.append({
-            "author": n["user"]["name"],
+            "author": n["user"].get("name") or n["user"].get("username"),  # usuário apagado vem sem nome
             "score": None,  # a API não expõe score de comentário
             "body": limpar(n["body_html"]),
             "depth": depth,
@@ -38,7 +38,7 @@ def coletar(query: str, limit: int = 5, max_comments: int = 30) -> list[dict]:
             "source": "devto",
             "id": str(a["id"]),
             "title": a["title"],
-            "author": a["user"]["name"],
+            "author": a["user"].get("name") or a["user"].get("username"),
             "url": a["url"],
             "score": a["public_reactions_count"],
             "created_utc": ts(a["published_timestamp"]),

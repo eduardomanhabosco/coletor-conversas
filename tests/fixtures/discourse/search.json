@@ -1,0 +1,62 @@
+{
+ "topics": [
+  {
+   "fancy_title": "Removing the asyncio policy system (asyncio.set_event_loop_policy) in Python 3.15",
+   "id": 37553,
+   "title": "Removing the asyncio policy system (asyncio.set_event_loop_policy) in Python 3.15",
+   "slug": "removing-the-asyncio-policy-system-asyncio-set-event-loop-policy-in-python-3-15",
+   "posts_count": 38,
+   "reply_count": 23,
+   "highest_post_number": 38,
+   "created_at": "2023-10-31T16:40:43.620Z",
+   "last_posted_at": "2023-11-17T04:55:58.882Z",
+   "bumped": true,
+   "bumped_at": "2023-11-17T04:55:58.882Z",
+   "archetype": "regular",
+   "unseen": false,
+   "pinned": false,
+   "unpinned": null,
+   "visible": true,
+   "closed": false,
+   "archived": false,
+   "bookmarked": null,
+   "liked": null,
+   "tags": [],
+   "tags_descriptions": {},
+   "category_id": 20,
+   "has_accepted_answer": false
+  },
+  {
+   "fancy_title": "Add `asyncio.console` module to progamatically access the asyncio REPL",
+   "id": 79919,
+   "title": "Add `asyncio.console` module to progamatically access the asyncio REPL",
+   "slug": "add-asyncio-console-module-to-progamatically-access-the-asyncio-repl",
+   "posts_count": 7,
+   "reply_count": 4,
+   "highest_post_number": 7,
+   "created_at": "2025-02-08T12:03:23.584Z",
+   "last_posted_at": "2025-02-10T18:00:28.544Z",
+   "bumped": true,
+   "bumped_at": "2025-02-10T18:00:28.544Z",
+   "archetype": "regular",
+   "unseen": false,
+   "pinned": false,
+   "unpinned": null,
+   "visible": true,
+   "closed": false,
+   "archived": false,
+   "bookmarked": null,
+   "liked": null,
+   "tags": [
+    {
+     "id": 43,
+     "name": "asyncio",
+     "slug": "asyncio"
+    }
+   ],
+   "tags_descriptions": {},
+   "category_id": 6,
+   "has_accepted_answer": false
+  }
+ ]
+}

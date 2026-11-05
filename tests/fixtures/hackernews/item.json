@@ -1,0 +1,155 @@
+{
+ "author": "usuario1",
+ "children": [
+  {
+   "author": "usuario2",
+   "children": [
+    {
+     "author": "usuario3",
+     "children": [],
+     "created_at": "2025-10-29T19:11:07.000Z",
+     "created_at_i": 1761765067,
+     "id": 45751587,
+     "options": [],
+     "parent_id": 45751484,
+     "points": null,
+     "story_id": 45751400,
+     "text": "&gt; Maybe I&#x27;m not using it to it&#x27;s full potential.<p>You aren&#x27;t, but that&#x27;s fine. Everyone has their own idea about how tooling should work and come together, and I happen to be i",
+     "title": null,
+     "type": "comment",
+     "url": null
+    },
+    {
+     "author": "usuario4",
+     "children": [],
+     "created_at": "2025-10-29T20:14:48.000Z",
+     "created_at_i": 1761768888,
+     "id": 45752456,
+     "options": [],
+     "parent_id": 45751484,
+     "points": null,
+     "story_id": 45751400,
+     "text": "The dependencies descriptor is further structured, a requirements.txt is pretty raw in comparison.<p>But where it isn&#x27;t a matter of opinion is, speed. Never met anyone who given then same interfa",
+     "title": null,
+     "type": "comment",
+     "url": null
+    },
+    {
+     "author": "usuario5",
+     "children": [],
+     "created_at": "2025-10-29T21:14:24.000Z",
+     "created_at_i": 1761772464,
+     "id": 45753128,
+     "options": [],
+     "parent_id": 45751484,
+     "points": null,
+     "story_id": 45751400,
+     "text": "I agree flake8 -&gt; ruff was more of a game changer for me than pip+venv -&gt; uv. I use flake8&#x2F;ruff for more often than pip&#x2F;venv.<p>uv is probably much more of a game changer for beginner ",
+     "title": null,
+     "type": "comment",
+     "url": null
+    }
+   ],
+   "created_at": "2025-10-29T19:03:15.000Z",
+   "created_at_i": 1761764595,
+   "id": 45751484,
+   "options": [],
+   "parent_id": 45751400,
+   "points": null,
+   "story_id": 45751400,
+   "text": "Idk, for me ruff was more of a game changer. No more explaining why we need both flake8 and pylint (and isort), no more flake8 plugins... Just one command that does it all.<p>UV is great but I use it ",
+   "title": null,
+   "type": "comment",
+   "url": null
+  },
+  {
+   "author": "usuario6",
+   "children": [
+    {
+     "author": "usuario7",
+     "children": [],
+     "created_at": "2025-10-30T06:16:30.000Z",
+     "created_at_i": 1761804990,
+     "id": 45756908,
+     "options": [],
+     "parent_id": 45751497,
+     "points": null,
+     "story_id": 45751400,
+     "text": "This resonates so much. As someone who&#x27;s more on the builder&#x2F;product side than engineering, I&#x27;ve always felt that barrier with Python tooling. The learning curve for environment managem",
+     "title": null,
+     "type": "comment",
+     "url": null
+    }
+   ],
+   "created_at": "2025-10-29T19:04:08.000Z",
+   "created_at_i": 1761764648,
+   "id": 45751497,
+   "options": [],
+   "parent_id": 45751400,
+   "points": null,
+   "story_id": 45751400,
+   "text": "A very accessible and gentle introduction for the scientific set who may still be largely stuck on Conda. I liked it!",
+   "title": null,
+   "type": "comment",
+   "url": null
+  },
+  {
+   "author": "usuario8",
+   "children": [
+    {
+     "author": "usuario3",
+     "children": [
+      {
+       "author": "usuario9",
+       "children": [],
+       "created_at": "2025-10-29T20:14:24.000Z",
+       "created_at_i": 1761768864,
+       "id": 45752448,
+       "options": [],
+       "parent_id": 45751633,
+       "points": null,
+       "story_id": 45751400,
+       "text": "It’s definitely an issue for learning the language. Obviously after working with python a bit that doesn’t matter, but fragmentation still makes it more of a hassle to get open source projects up and ",
+       "title": null,
+       "type": "comment",
+       "url": null
+      }
+     ],
+     "created_at": "2025-10-29T19:16:04.000Z",
+     "created_at_i": 1761765364,
+     "id": 45751633,
+     "options": [],
+     "parent_id": 45751570,
+     "points": null,
+     "story_id": 45751400,
+     "text": "&gt; Another<p>No, the same uv that people have been regularly (<a href=\"https:&#x2F;&#x2F;hn.algolia.com&#x2F;?q=uv\" rel=\"nofollow\">https:&#x2F;&#x2F;hn.algolia.com&#x2F;?q=uv</a>) posting about on H",
+     "title": null,
+     "type": "comment",
+     "url": null
+    }
+   ],
+   "created_at": "2025-10-29T19:09:46.000Z",
+   "created_at_i": 1761764986,
+   "id": 45751570,
+   "options": [],
+   "parent_id": 45751400,
+   "points": null,
+   "story_id": 45751400,
+   "text": "<i>Another</i> Python package manager? How many are there now?",
+   "title": null,
+   "type": "comment",
+   "url": null
+  }
+ ],
+ "created_at": "2025-10-29T18:57:29.000Z",
+ "created_at_i": 1761764249,
+ "id": 45751400,
+ "options": [],
+ "parent_id": null,
+ "points": 2214,
+ "story_id": 45751400,
+ "text": null,
+ "title": "Uv is the best thing to happen to the Python ecosystem in a decade",
+ "type": "story",
+ "url": "https://emily.space/posts/251023-uv"
+}

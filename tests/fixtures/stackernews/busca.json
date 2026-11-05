@@ -1,0 +1,45 @@
+{
+ "data": {
+  "search": {
+   "cursor": null,
+   "items": [
+    {
+     "id": "145247",
+     "title": null,
+     "url": null,
+     "text": "A bitcoin wallet.",
+     "createdAt": "2023-02-28T18:24:28.649Z",
+     "ncomments": 0,
+     "sats": 0,
+     "user": {
+      "name": "usuario1"
+     }
+    },
+    {
+     "id": "16997",
+     "title": "Simple Bitcoin Wallet",
+     "url": "https://sbw.app/",
+     "text": null,
+     "createdAt": "2022-03-30T08:58:33.781Z",
+     "ncomments": 7,
+     "sats": 311,
+     "user": {
+      "name": "usuario2"
+     }
+    },
+    {
+     "id": "1290500",
+     "title": "MANNA BITCOIN WALLET",
+     "url": null,
+     "text": "Manna Bitcoin Wallet is a user-friendly digital wallet designed specifically for managing Bitcoin (BTC) securely and efficiently. It offers a simple interface ideal for both beginners and experienced ",
+     "createdAt": "2025-11-24T20:49:40.698Z",
+     "ncomments": 3,
+     "sats": 0,
+     "user": {
+      "name": "usuario3"
+     }
+    }
+   ]
+  }
+ }
+}

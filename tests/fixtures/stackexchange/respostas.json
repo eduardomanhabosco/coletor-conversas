@@ -1,0 +1,63 @@
+{
+ "items": [
+  {
+   "owner": {
+    "display_name": "usuario1"
+   },
+   "is_accepted": false,
+   "community_owned_date": 1339365389,
+   "score": 4898,
+   "last_activity_date": 1619473774,
+   "last_edit_date": 1619473774,
+   "creation_date": 1256043946,
+   "answer_id": 1594484,
+   "question_id": 739654,
+   "content_license": "CC BY-SA 4.0",
+   "body": "<p>If you are not into long explanations, see <a href=\"https://stackoverflow.com/questions/739654/understanding-python-decorators#answer-739665\">Paolo Bergantino’s answer</a>.</p>\n<h1>Decorator Basics"
+  },
+  {
+   "owner": {
+    "display_name": "usuario2"
+   },
+   "is_accepted": true,
+   "score": 3102,
+   "last_activity_date": 1614176498,
+   "last_edit_date": 1614176498,
+   "creation_date": 1239434178,
+   "answer_id": 739665,
+   "question_id": 739654,
+   "content_license": "CC BY-SA 4.0",
+   "body": "<p>Check out <a href=\"http://docs.python.org/reference/compound_stmts.html#function\" rel=\"noreferrer\">the documentation</a> to see how decorators work. Here is what you asked for:</p>\n<pre><code>from "
+  },
+  {
+   "owner": {
+    "display_name": "usuario3"
+   },
+   "is_accepted": true,
+   "score": 1351,
+   "last_activity_date": 1697590971,
+   "last_edit_date": 1697590971,
+   "creation_date": 1372280067,
+   "answer_id": 17330273,
+   "question_id": 17330160,
+   "content_license": "CC BY-SA 4.0",
+   "body": "<p>The <code>property()</code> function returns a special <a href=\"https://docs.python.org/howto/descriptor.html\" rel=\"noreferrer\">descriptor object</a>:</p>\n<pre class=\"lang-python prettyprint-overri"
+  },
+  {
+   "owner": {
+    "display_name": "usuario4"
+   },
+   "is_accepted": false,
+   "score": 403,
+   "last_activity_date": 1654752691,
+   "last_edit_date": 1654752691,
+   "creation_date": 1372279971,
+   "answer_id": 17330236,
+   "question_id": 17330160,
+   "content_license": "CC BY-SA 4.0",
+   "body": "<p>The <a href=\"http://docs.python.org/3/library/functions.html#property\" rel=\"noreferrer\">documentation says</a> it's just a shortcut for creating read-only properties. So</p>\n<pre><code>@property\nde"
+  }
+ ],
+ "has_more": false,
+ "quota_remaining": 249
+}

@@ -1,0 +1,73 @@
+{
+ "post_view": {
+  "post": {
+   "id": 39784953,
+   "name": "Python Foundation rejects $1.5M grant with no-DEI strings",
+   "url": "https://www.theregister.com/2025/10/27/python_foundation_abandons_15m_nsf/",
+   "body": "> Foundation says it won't compromise policy of inclusivity even if that cash would've really helped",
+   "creator_id": 833046,
+   "community_id": 131441,
+   "removed": false,
+   "locked": false,
+   "published": "2025-10-27T22:57:23.406703Z",
+   "deleted": false,
+   "nsfw": false,
+   "embed_title": "Python Foundation rejects $1.5M grant with no-DEI strings",
+   "embed_description": ": Foundation says it won't compromise policy of inclusivity even if that cash would've really helped",
+   "thumbnail_url": "https://programming.dev/pictrs/image/980afa7c-2f82-4e0f-b996-ea7887dba332.jpeg",
+   "ap_id": "https://lemmy.zip/post/51881348",
+   "local": false,
+   "language_id": 37,
+   "featured_community": false,
+   "featured_local": false,
+   "url_content_type": "text/html; charset=utf-8"
+  },
+  "creator": {
+   "name": "usuario1",
+   "display_name": "usuario1"
+  },
+  "community": {
+   "id": 131441,
+   "name": "opensource",
+   "title": "Opensource",
+   "description": "A community for discussion about open source software! Ask questions, share knowledge, share news, or post interesting stuff related to it!\n\n:::spoiler Credits\nIcon base by [Lorc](https://lorcblog.blo",
+   "removed": false,
+   "published": "2023-09-25T01:35:35.438026Z",
+   "updated": "2023-09-25T01:50:28.078155Z",
+   "deleted": false,
+   "nsfw": false,
+   "actor_id": "https://programming.dev/c/opensource",
+   "local": true,
+   "icon": "https://programming.dev/pictrs/image/244e6071-5fec-4df6-81d8-ab5d08fabf4d.png",
+   "hidden": false,
+   "posting_restricted_to_mods": false,
+   "instance_id": 1,
+   "visibility": "Public"
+  },
+  "image_details": {
+   "link": "https://programming.dev/pictrs/image/980afa7c-2f82-4e0f-b996-ea7887dba332.jpeg",
+   "width": 512,
+   "height": 341,
+   "content_type": "image/jpeg"
+  },
+  "creator_banned_from_community": false,
+  "banned_from_community": false,
+  "creator_is_moderator": false,
+  "creator_is_admin": false,
+  "counts": {
+   "post_id": 39784953,
+   "comments": 122,
+   "score": 1022,
+   "upvotes": 1034,
+   "downvotes": 12,
+   "published": "2025-10-27T22:57:23.406703Z",
+   "newest_comment_time": "2025-10-30T10:51:14.631522Z"
+  },
+  "subscribed": "NotSubscribed",
+  "saved": false,
+  "read": false,
+  "hidden": false,
+  "creator_blocked": false,
+  "unread_comments": 122
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "data": {
+  "item": {
+   "id": "16997",
+   "title": "Simple Bitcoin Wallet",
+   "url": "https://sbw.app/",
+   "text": null,
+   "createdAt": "2022-03-30T08:58:33.781Z",
+   "ncomments": 7,
+   "sats": 311,
+   "user": {
+    "name": "usuario2"
+   },
+   "comments": {
+    "comments": [
+     {
+      "id": "17037",
+      "text": "Are the hosted channels \"safe\" again?",
+      "sats": 22,
+      "user": {
+       "name": "usuario1"
+      },
+      "comments": {
+       "comments": [
+        {
+         "id": "1103170",
+         "text": "*deleted by author*",
+         "sats": 0,
+         "user": {
+          "name": "usuario2"
+         },
+         "comments": {
+          "comments": []
+         }
+        }
+       ]
+      }
+     },
+     {
+      "id": "17000",
+      "text": "You are not a real user of LN if you do not use this LN app!",
+      "sats": 1,
+      "user": {
+       "name": "usuario3"
+      },
+      "comments": {
+       "comments": [
+        {
+         "id": "17006",
+         "text": "I agree!",
+         "sats": 1,
+         "user": {
+          "name": "usuario4"
+         },
+         "comments": {
+          "comments": [
+           {
+            "id": "1103139",
+            "text": "*deleted by author*",
+            "sats": 0,
+            "user": {
+             "name": "usuario2"
+            },
+            "comments": {
+             "comments": []
+            }
+           }
+          ]
+         }
+        },
+        {
+         "id": "1103133",
+         "text": "*deleted by author*",
+         "sats": 0,
+         "user": {
+          "name": "usuario2"
+         },
+         "comments": {
+          "comments": []
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ }
+}

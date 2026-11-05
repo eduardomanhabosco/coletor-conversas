@@ -1,0 +1,57 @@
+{
+ "items": [
+  {
+   "tags": [
+    "python",
+    "properties",
+    "decorator",
+    "python-decorators",
+    "python-internals"
+   ],
+   "owner": {
+    "display_name": "usuario1"
+   },
+   "is_answered": true,
+   "view_count": 917008,
+   "accepted_answer_id": 17330273,
+   "answer_count": 15,
+   "score": 1434,
+   "last_activity_date": 1752928618,
+   "creation_date": 1372279635,
+   "last_edit_date": 1752928618,
+   "question_id": 17330160,
+   "content_license": "CC BY-SA 4.0",
+   "link": "https://stackoverflow.com/questions/17330160/how-does-the-property-decorator-work-in-python",
+   "title": "How does the @property decorator work in Python?",
+   "body": "<p>I would like to understand how the built-in function <code>property</code> works. What confuses me is that <code>property</code> can also be used as a decorator, but it only takes arguments when us"
+  },
+  {
+   "tags": [
+    "python",
+    "function",
+    "decorator",
+    "python-decorators",
+    "chain"
+   ],
+   "owner": {
+    "display_name": "usuario2"
+   },
+   "is_answered": true,
+   "view_count": 700244,
+   "protected_date": 1365593629,
+   "accepted_answer_id": 739665,
+   "answer_count": 22,
+   "score": 3202,
+   "last_activity_date": 1696726378,
+   "creation_date": 1239433531,
+   "last_edit_date": 1672395048,
+   "question_id": 739654,
+   "content_license": "CC BY-SA 4.0",
+   "link": "https://stackoverflow.com/questions/739654/how-do-i-make-function-decorators-and-chain-them-together",
+   "title": "How do I make function decorators and chain them together?",
+   "body": "<p>How do I make two decorators in Python that would do the following?</p>\n<pre><code>@make_bold\n@make_italic\ndef say():\n   return &quot;Hello&quot;\n</code></pre>\n<p>Calling <code>say()</code> should "
+  }
+ ],
+ "has_more": false,
+ "quota_remaining": 250
+}

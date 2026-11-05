@@ -1,0 +1,30 @@
+{
+ "items": [
+  {
+   "tags": [
+    "python",
+    "properties",
+    "decorator",
+    "python-decorators",
+    "python-internals"
+   ],
+   "owner": {
+    "display_name": "usuario1"
+   },
+   "is_answered": true,
+   "view_count": 917008,
+   "accepted_answer_id": 17330273,
+   "answer_count": 15,
+   "score": 1434,
+   "last_activity_date": 1752928618,
+   "creation_date": 1372279635,
+   "last_edit_date": 1752928618,
+   "question_id": 17330160,
+   "content_license": "CC BY-SA 4.0",
+   "link": "https://stackoverflow.com/questions/17330160/how-does-the-property-decorator-work-in-python",
+   "title": "How does the @property decorator work in Python?",
+   "body": "<p>I would like to understand how the built-in function <code>property</code> works. What confuses me is that <code>property</code> can also be used as a decorator, but it only takes arguments when us"
+  }
+ ],
+ "has_more": false
+}

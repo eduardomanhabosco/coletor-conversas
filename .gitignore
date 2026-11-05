@@ -6,6 +6,7 @@ docs/
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 
 # Segredos
 .env

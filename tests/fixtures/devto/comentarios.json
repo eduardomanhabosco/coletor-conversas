@@ -1,0 +1,125 @@
+[
+ {
+  "type_of": "comment",
+  "id_code": "3k1bo",
+  "created_at": "2026-11-04T05:26:50Z",
+  "ai_disclosure_level": "not_disclosed",
+  "ai_disclosure_label": "Not Disclosed",
+  "body_html": "<p>Great write-up! I especially liked the audio synchronization issue and the reminder that a successful API call doesn’t always mean the expected result actually happened. These are the kinds of less",
+  "user": {
+   "name": "usuario1",
+   "username": "usuario2"
+  },
+  "children": [
+   {
+    "type_of": "comment",
+    "id_code": "3k1ch",
+    "created_at": "2026-11-04T05:30:47Z",
+    "ai_disclosure_level": "not_disclosed",
+    "ai_disclosure_label": "Not Disclosed",
+    "body_html": "<p>Thanks broo. really glad those two landed the audio one surprised me most, because nothing crashes.... the recording just looks fine until the first long silence, and then the sound slowly slides o",
+    "user": {
+     "name": "usuario3",
+     "username": "usuario4"
+    },
+    "children": [
+     {
+      "type_of": "comment",
+      "id_code": "3k1f8",
+      "created_at": "2026-11-04T05:47:27Z",
+      "ai_disclosure_level": "not_disclosed",
+      "ai_disclosure_label": "Not Disclosed",
+      "body_html": "<p>Absolutely, bro! I’ve encountered similar situations in infrastructure and automation, where an API reports success but the actual system state tells a different story. That’s why I’ve learned to t",
+      "user": {
+       "name": "usuario1",
+       "username": "usuario2"
+      },
+      "children": [
+       {
+        "type_of": "comment",
+        "id_code": "3k1g1",
+        "created_at": "2026-11-04T05:50:57Z",
+        "ai_disclosure_level": "not_disclosed",
+        "ai_disclosure_label": "Not Disclosed",
+        "body_html": "<p>yeah next post soon.... ;)<br>\nbro see this:</p>\n\n<p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.u",
+        "user": {
+         "name": "usuario3",
+         "username": "usuario4"
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type_of": "comment",
+  "id_code": "3k1e1",
+  "created_at": "2026-11-04T05:41:33Z",
+  "ai_disclosure_level": "not_disclosed",
+  "ai_disclosure_label": "Not Disclosed",
+  "body_html": "<p>To be honest, I’m practically a pre-beginner Python coder. Around 2019, I was very keen on becoming a Python developer to complement my existing skills as a React developer. However, the company I ",
+  "user": {
+   "name": "usuario5",
+   "username": "usuario6"
+  },
+  "children": [
+   {
+    "type_of": "comment",
+    "id_code": "3k1fd",
+    "created_at": "2026-11-04T05:48:48Z",
+    "ai_disclosure_level": "not_disclosed",
+    "ai_disclosure_label": "Not Disclosed",
+    "body_html": "<p>Thanks for sharing thiss, Peter bro! And “pre-beginner” undersells it. bridging JS and Python over WebSockets to call a translation function is real integration work, and it’s the kind of thing tha",
+    "user": {
+     "name": "usuario3",
+     "username": "usuario4"
+    },
+    "children": [
+     {
+      "type_of": "comment",
+      "id_code": "3k1hg",
+      "created_at": "2026-11-04T06:01:02Z",
+      "ai_disclosure_level": "not_disclosed",
+      "ai_disclosure_label": "Not Disclosed",
+      "body_html": "<p>Good question, just for loading blender file to AI.<br>\n<a href=\"https://github.com/Pengeszikra/3Draft\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">github.com/Pengeszikra/3Draft</a><br>\n... ",
+      "user": {
+       "name": "usuario5",
+       "username": "usuario6"
+      },
+      "children": [
+       {
+        "type_of": "comment",
+        "id_code": "3k1i1",
+        "created_at": "2026-11-04T06:03:42Z",
+        "ai_disclosure_level": "not_disclosed",
+        "ai_disclosure_label": "Not Disclosed",
+        "body_html": "<p>.... under heavy development 😆☠️<br>\nthanks for sharing this.</p>\n\n",
+        "user": {
+         "name": "usuario3",
+         "username": "usuario4"
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type_of": "comment",
+  "id_code": "3k1l3",
+  "created_at": "2026-11-04T06:39:41Z",
+  "ai_disclosure_level": "not_disclosed",
+  "ai_disclosure_label": "Not Disclosed",
+  "body_html": "<p>The obsession with wrapping remote APIs into multi-layered agent abstractions is creating massive hidden latency and failure cascades in production.</p>\n\n<p>If you profile real-world workloads, bar",
+  "user": {
+   "name": "usuario7",
+   "username": "usuario8"
+  },
+  "children": []
+ }
+]

@@ -1,0 +1,44 @@
+{
+ "id": "117559224317312428",
+ "created_at": "2026-11-04T16:56:45.000Z",
+ "in_reply_to_id": null,
+ "in_reply_to_account_id": null,
+ "sensitive": false,
+ "spoiler_text": "",
+ "visibility": "public",
+ "language": "en",
+ "uri": "https://fosstodon.org/users/brianb/statuses/117559224240678856",
+ "url": "https://fosstodon.org/@brianb/117559224240678856",
+ "replies_count": 4,
+ "reblogs_count": 3,
+ "favourites_count": 0,
+ "quotes_count": 0,
+ "edited_at": null,
+ "content": "<p>I'm using Python's ZipFile to unzip an uploaded archive. It knows the correct path for the extracted files, but I cannot find a way to easily remove the _root_ folder for the file.</p><p>A user cre",
+ "reblog": null,
+ "account": {
+  "username": "usuario1",
+  "acct": "usuario2",
+  "display_name": "usuario3"
+ },
+ "tags": [
+  {
+   "name": "python",
+   "url": "https://mastodon.social/tags/python"
+  },
+  {
+   "name": "askfedi",
+   "url": "https://mastodon.social/tags/askfedi"
+  }
+ ],
+ "tagged_collections": [],
+ "quote": null,
+ "poll": null,
+ "quote_approval": {
+  "automatic": [
+   "public"
+  ],
+  "manual": [],
+  "current_user": "denied"
+ }
+}

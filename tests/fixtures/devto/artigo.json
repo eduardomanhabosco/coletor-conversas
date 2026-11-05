@@ -1,0 +1,39 @@
+{
+ "type_of": "article",
+ "id": 4973197,
+ "title": "Are You a Python Developer or a Python Expert? 8 Tests I Failed Hijacking Win+Shift+S in One 7,600-Line File",
+ "description": "Most Python developers can parse a CSV, write a decorator and pip install their way out of a...",
+ "readable_publish_date": "Nov 4",
+ "slug": "are-you-a-python-developer-or-a-python-expert-8-tests-i-failed-hijacking-winshifts-in-one-30dg",
+ "path": "/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-8-tests-i-failed-hijacking-winshifts-in-one-30dg",
+ "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-8-tests-i-failed-hijacking-winshifts-in-one-30dg",
+ "comments_count": 62,
+ "public_reactions_count": 24,
+ "collection_id": 46148,
+ "published_timestamp": "2026-11-04T05:14:56Z",
+ "language": "en",
+ "subforem_id": 1,
+ "ai_disclosure_level": "not_disclosed",
+ "ai_disclosure_label": "Not Disclosed",
+ "positive_reactions_count": 24,
+ "canonical_url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-8-tests-i-failed-hijacking-winshifts-in-one-30dg",
+ "created_at": "2026-11-04T05:14:56Z",
+ "edited_at": null,
+ "crossposted_at": null,
+ "published_at": "2026-11-04T05:14:56Z",
+ "last_comment_at": "2026-11-04T19:18:28Z",
+ "reading_time_minutes": 10,
+ "tag_list": "python, programming, tutorial, productivity",
+ "tags": [
+  "python",
+  "programming",
+  "tutorial",
+  "productivity"
+ ],
+ "body_html": "<p>Most Python developers can parse a CSV, write a decorator and <code>pip install</code> their way out of a problem.</p>\n\n<p>Python experts know what happens when <strong>the operating system doesn't",
+ "body_markdown": "Most Python developers can parse a CSV, write a decorator and `pip install` their way out of a problem.\n\nPython experts know what happens when **the operating system doesn't want you to do the thing**",
+ "user": {
+  "name": "usuario1",
+  "username": "usuario2"
+ }
+}

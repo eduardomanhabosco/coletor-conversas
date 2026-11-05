@@ -1,0 +1,20 @@
+{
+ "id": "19b09677-10a6-4f75-a577-19b6dc50d4bc",
+ "owner_id": "911a220c-5044-499e-9957-1e51ef15a4d5",
+ "parent_id": null,
+ "slug": "pitch-7-licoes-de-um-cli-que-edita-app-json-podfile-e-gradle-sem-estragar-o-projeto-de-ninguem",
+ "title": "Pitch: 7 lições de um CLI que edita app.json, Podfile e Gradle sem estragar o projeto de ninguém",
+ "body": "Se você já escreveu um script que \"só adiciona uma linha\" num arquivo de configuração de outra pessoa, sabe que essa linha nunca é só uma linha. O arquivo tem comentários, um fim de linha diferente, u",
+ "status": "published",
+ "type": "content",
+ "source_url": null,
+ "created_at": "2026-10-29T20:58:38.119Z",
+ "updated_at": "2026-10-29T21:04:18.932Z",
+ "published_at": "2026-10-29T20:58:38.124Z",
+ "deleted_at": null,
+ "owner_username": "usuario1",
+ "tabcoins": 1,
+ "tabcoins_credit": 0,
+ "tabcoins_debit": 0,
+ "children_deep_count": 5
+}

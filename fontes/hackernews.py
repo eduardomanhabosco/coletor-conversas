@@ -1,9 +1,4 @@
-import json
-import sys
-
-import requests
-
-from common import H, TIMEOUT, limpar
+from common import com_progresso, get, limpar
 
 BASE = "https://hn.algolia.com/api/v1"
 
@@ -26,53 +21,41 @@ def achatar(no: dict, depth: int = 0) -> list[dict]:
     return saida
 
 
-def coletar(query: str, limit: int = 5, max_comments: int = 30) -> list[dict]:
-    r = requests.get(
-        f"{BASE}/search",
-        headers=H,
-        timeout=TIMEOUT,
-        params={
-            "query": query,
-            "tags": "story",
-            "hitsPerPage": limit,
-        },
+def coletar(
+    query: str, limit: int = 5, max_comments: int = 30,
+    desde: int | None = None, ate: int | None = None, min_comments: int = 0, ordem: str = "relevancia",
+) -> list[dict]:
+    # Os filtros vão na própria busca, então o limit conta só os posts que passam neles.
+    filtros = [f"num_comments>={min_comments}"]
+    if desde is not None:
+        filtros.append(f"created_at_i>={desde}")
+    if ate is not None:
+        filtros.append(f"created_at_i<={ate}")
+    busca = "search_by_date" if ordem == "recentes" else "search"
+    hits = get(
+        f"{BASE}/{busca}", query=query, tags="story", hitsPerPage=limit, numericFilters=",".join(filtros),
+    )["hits"]
+
+    # o num_comments da busca é o que o HN informa (conta também os apagados)
+    return com_progresso(
+        "hackernews", hits,
+        lambda hit: {**por_id(hit["objectID"], max_comments), "num_comments": hit["num_comments"]},
     )
-    r.raise_for_status()
-
-    posts = []
-
-    for hit in r.json()["hits"]:
-        rid = hit["objectID"]
-
-        item = requests.get(
-            f"{BASE}/items/{rid}",
-            headers=H,
-            timeout=TIMEOUT,
-        ).json()
-
-        posts.append({
-            "source": "hackernews",
-            "id": rid,
-            "title": hit["title"],
-            "author": hit["author"],
-            "url": f"https://news.ycombinator.com/item?id={rid}",
-            "score": hit["points"],
-            "created_utc": hit["created_at_i"],
-            "selftext": limpar(item.get("text")),
-            "num_comments": hit["num_comments"],
-            "comments": achatar(item)[:max_comments],
-        })
-
-    return posts
 
 
-if __name__ == "__main__":
-    q = sys.argv[1] if len(sys.argv) > 1 else "video editing"
-
-    print(
-        json.dumps(
-            coletar(q, limit=2, max_comments=3),
-            ensure_ascii=False,
-            indent=2,
-        )
-    )
+def por_id(id: str, max_comments: int = 30) -> dict:
+    # o /items/{id} traz o post e a árvore inteira de comentários
+    item = get(f"{BASE}/items/{id}")  # get já faz raise_for_status e tenta de novo em 429
+    comentarios = achatar(item)
+    return {
+        "source": "hackernews",
+        "id": str(item["id"]),
+        "title": item.get("title") or "",
+        "author": item.get("author"),
+        "url": f"https://news.ycombinator.com/item?id={item['id']}",
+        "score": item.get("points"),
+        "created_utc": item["created_at_i"],
+        "selftext": limpar(item.get("text")),
+        "num_comments": len(comentarios),
+        "comments": comentarios[:max_comments],
+    }

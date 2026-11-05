@@ -1,10 +1,12 @@
 import html
 import re
+import time
 from datetime import datetime
 
 import requests
 
 H = {"User-Agent": "estudo-coletor/0.1 (projeto pessoal de estudo)"}
+TIMEOUT = 60  # threads grandes (Hacker News, Discourse) passavam dos 15 s antigos
 
 
 def limpar(texto: str | None) -> str:
@@ -38,7 +40,22 @@ def ranquear(itens: list[dict], texto_de, ps: list[str], desempate) -> list[dict
     return [i for _, i in sorted(validos, key=lambda x: (x[0], desempate(x[1])), reverse=True)]
 
 
+def pedir(metodo: str, url: str, **kw) -> dict | list:
+    # Se o site responder 429 (muitas requisições), espera o que ele pedir e tenta de novo (até 3x).
+    for tentativa in range(3):
+        r = requests.request(metodo, url, headers=H, timeout=TIMEOUT, **kw)
+        if r.status_code == 429 and tentativa < 2:
+            espera = r.headers.get("Retry-After", "5")
+            time.sleep(int(espera) if espera.isdigit() else 5)
+            continue
+        r.raise_for_status()
+        return r.json()
+
+
 def get(url: str, **params) -> dict | list:
-    r = requests.get(url, headers=H, params=params, timeout=15)
-    r.raise_for_status()
-    return r.json()
+    return pedir("GET", url, params=params)
+
+
+def post(url: str, dados: dict) -> dict:
+    # usado pelas APIs GraphQL (ex.: Stacker News), que recebem a consulta num POST
+    return pedir("POST", url, json=dados)

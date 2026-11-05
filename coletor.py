@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from fontes import devto, discourse, hackernews, lemmy, mastodon, stackexchange
+from fontes import devto, discourse, hackernews, lemmy, mastodon, stackernews, stackexchange, tabnews
 from idioma import detectar
 
 FONTES = {
@@ -10,6 +10,16 @@ FONTES = {
     "devto": devto,
     "mastodon": mastodon,
     "discourse": discourse,
+    # fóruns abertos (sem login) adicionados depois
+    "stackernews": stackernews,
+    "tabnews": tabnews,
+    "programmingdev": lemmy.Instancia("programming.dev", local=True),
+    "lemmybr": lemmy.Instancia("lemmy.eco.br", local=True),
+    "python": discourse.Forum("https://discuss.python.org"),
+    "freecodecamp": discourse.Forum("https://forum.freecodecamp.org"),
+    "openai": discourse.Forum("https://community.openai.com"),
+    "rust": discourse.Forum("https://users.rust-lang.org"),
+    "cursor": discourse.Forum("https://forum.cursor.com"),
 }
 
 

@@ -6,7 +6,7 @@ CLI em Python que busca posts e comentários sobre um tema em várias comunidade
 
 ## 🎯 O que faz
 Você digita um tema (ex.: `"como fazer loop"`) e o programa:
-1. busca posts em até 6 fontes;
+1. busca posts em até 15 fontes;
 2. coleta o texto do post e os comentários (ou respostas);
 3. detecta o idioma de cada post (`langdetect`) e filtra, se você pedir;
 4. salva em `output/<tema>_<data>.json`.
@@ -16,13 +16,34 @@ Você digita um tema (ex.: `"como fazer loop"`) e o programa:
 | Fonte | Busca | Comentários |
 |-------|-------|-------------|
 | Hacker News | texto | árvore completa |
-| Lemmy (lemmy.world) | texto | por post, ordenados por score |
+| Lemmy (lemmy.world) | texto, em todo o fediverso | todos, ordenados por score (de 50 em 50) |
 | Stack Exchange | texto, em 6 comunidades (`stackoverflow`, `pt.stackoverflow`, `softwareengineering`, `codereview`, `ux`, `pm`) | respostas mais votadas |
 | Dev.to | por tags (a busca inteira e cada palavra) | árvore completa |
 | Mastodon (mastodon.social) | por hashtags (a busca inteira e cada palavra) | respostas ao toot |
-| Discourse (meta.discourse.org) | texto | posts do tópico |
+| Discourse (meta.discourse.org) | texto | todos os posts do tópico |
 
-Cada fonte é um arquivo em `fontes/` com uma função `coletar(query, limit, max_comments)`, então adicionar uma nova é criar um arquivo e registrá-lo no `main.py`.
+Fóruns abertos (sem login) adicionados depois; o nome da 1ª coluna é o que vai no `--sources`:
+
+| `--sources` | Site | Tipo | Busca | Comentários |
+|-------------|------|------|-------|-------------|
+| `stackernews` | stacker.news | parecido com o HN (API GraphQL) | texto | árvore, até 6 níveis |
+| `tabnews` | tabnews.com.br 🇧🇷 | fórum de dev brasileiro | palavras no título dos ~1.000 posts mais novos + relevantes (a API não tem busca) | árvore completa |
+| `programmingdev` | programming.dev | Lemmy só de programação | texto, só comunidades locais | todos |
+| `lemmybr` | lemmy.eco.br 🇧🇷 | Lemmy brasileiro | texto, só comunidades locais | todos |
+| `python` | discuss.python.org | Discourse | texto | todos os posts do tópico |
+| `freecodecamp` | forum.freecodecamp.org | Discourse | texto | todos os posts do tópico |
+| `openai` | community.openai.com | Discourse | texto | todos os posts do tópico |
+| `rust` | users.rust-lang.org | Discourse | texto | todos os posts do tópico |
+| `cursor` | forum.cursor.com | Discourse | texto | todos os posts do tópico |
+
+Cada fonte é um arquivo em `fontes/` com uma função `coletar(query, limit, max_comments)`, registrado no dicionário `FONTES` do `coletor.py`. Para outro fórum Discourse ou instância Lemmy, basta uma linha lá:
+
+```python
+"godot": discourse.Forum("https://forum.godotengine.org"),
+"feddit": lemmy.Instancia("feddit.org", local=True),
+```
+
+> Os fóruns Discourse pedem no `robots.txt` que robôs não usem a busca (`/search`). Para uso pessoal, mantenha o volume baixo. O contador de comentários do Lemmy inclui apagados, então às vezes vêm menos que o `num_comments`. O PieFed ficou de fora: o `robots.txt` dele declara `ai-input=no`.
 
 ## 🚀 Como rodar
 ```powershell
@@ -66,6 +87,7 @@ fonte → idioma → posts → comentários
 
 ## 🗺️ Roadmap
 - [x] 6 fontes com formato comum
+- [x] +9 fóruns abertos (Stacker News, TabNews, programming.dev, lemmy.eco.br e 5 fóruns Discourse)
 - [x] Detecção e filtro de idioma
 - [x] `--min-comments` e `--max-comments`
 - [ ] Filtro por data (`--since` / `--until`)

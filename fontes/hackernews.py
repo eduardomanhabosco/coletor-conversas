@@ -3,7 +3,7 @@ import sys
 
 import requests
 
-from common import H, limpar
+from common import H, TIMEOUT, limpar
 
 BASE = "https://hn.algolia.com/api/v1"
 
@@ -30,7 +30,7 @@ def coletar(query: str, limit: int = 5, max_comments: int = 30) -> list[dict]:
     r = requests.get(
         f"{BASE}/search",
         headers=H,
-        timeout=15,
+        timeout=TIMEOUT,
         params={
             "query": query,
             "tags": "story",
@@ -47,7 +47,7 @@ def coletar(query: str, limit: int = 5, max_comments: int = 30) -> list[dict]:
         item = requests.get(
             f"{BASE}/items/{rid}",
             headers=H,
-            timeout=15,
+            timeout=TIMEOUT,
         ).json()
 
         posts.append({
